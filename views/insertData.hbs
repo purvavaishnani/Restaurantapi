@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>Get Data</title>
+</head>
+<body>
+    {{#if errorMsg}}
+        <h5>{{errorMsg}}</h5>
+    {{else}}
+        <h1>Please Insert Data below</h1>
+    {{/if}}
+    <form method="post" action="/api/restaurants/insertData">
+        <label>Page</label><input name="page" type="number"><br><br>
+        <label>Per Page</label><input name="perPage" type="number"><br><br>
+        <label>Borough</label><input name="borough" type="text"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

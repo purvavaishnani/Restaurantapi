@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body bgcolor="beige">
+    <table border="1" width="100%" style="border-collapse: collapse;color:rgb(42, 165, 69)">
+        <tr>
+            <th>Resturant ID</th>
+            <th>Name</th>
+            <th>Borough</th>
+            <th>Cuisine</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{this.restaurant_id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.borough}}</td>
+            <td>{{this.cuisine}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
